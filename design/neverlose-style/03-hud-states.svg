@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+<title>Neverlose Reloaded inspired HUD states</title>
+<defs>
+  <linearGradient id="scene" x1="0" y1="0" x2="1920" y2="1080"><stop stop-color="#17232B"/><stop offset=".45" stop-color="#27333A"/><stop offset="1" stop-color="#0A1117"/></linearGradient>
+  <linearGradient id="floor" x1="960" y1="560" x2="960" y2="1080"><stop stop-color="#4B5150"/><stop offset="1" stop-color="#151C21"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8C79FF"/><stop offset="1" stop-color="#5B45D9"/></linearGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="shadow"><feDropShadow dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".5"/></filter>
+  <filter id="softglow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<g id="Abstract Game Background">
+  <rect width="1920" height="1080" fill="url(#scene)"/>
+  <rect y="590" width="1920" height="490" fill="url(#floor)"/>
+  <path d="M0 590H1920" stroke="#859196" stroke-opacity=".25"/>
+  <g opacity=".28"><rect x="0" y="170" width="400" height="420" fill="#56656A"/><rect x="75" y="250" width="250" height="340" fill="#1D292F"/><rect x="1520" y="100" width="400" height="490" fill="#4B5A60"/><rect x="1600" y="215" width="220" height="375" fill="#1A252B"/><rect x="690" y="310" width="540" height="280" fill="#37444A"/><path d="M780 590V390H1140V590" stroke="#9AA4A6" stroke-width="10" stroke-opacity=".2"/></g>
+  <g opacity=".12" stroke="#D4DADB"><path d="M960 590L620 1080M960 590L1300 1080M960 590L960 1080M0 740H1920M0 900H1920"/></g>
+  <rect width="1920" height="1080" fill="#071017" opacity=".35"/>
+  <ellipse cx="970" cy="520" rx="620" ry="360" fill="#6574C8" opacity=".055" filter="url(#blur)"/>
+</g>
+
+<g id="Watermark" filter="url(#shadow)">
+  <rect x="38" y="32" width="300" height="42" rx="10" fill="#0C131A" fill-opacity=".94" stroke="#303B46"/>
+  <rect x="48" y="41" width="24" height="24" rx="7" fill="url(#accent)"/>
+  <path d="M54 59V48L60 53.5L66 48V59" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="82" y="57" fill="#E8EDF1" font-family="Inter,Arial" font-size="11" font-weight="650">Neverlose</text>
+  <rect x="147" y="44" width="1" height="18" fill="#303B46"/>
+  <circle cx="163" cy="53" r="3" fill="#67DFA0"/><text x="174" y="57" fill="#8997A4" font-family="Inter,Arial" font-size="9.5">24 ms</text>
+  <rect x="217" y="44" width="1" height="18" fill="#303B46"/><text x="231" y="57" fill="#8997A4" font-family="Inter,Arial" font-size="9.5">18:42</text><text x="296" y="57" fill="#6D60CB" font-family="Inter,Arial" font-size="9" font-weight="650">BETA</text>
+</g>
+
+<g id="Keybinds" filter="url(#shadow)">
+  <rect x="38" y="92" width="244" height="150" rx="12" fill="#0B1219" fill-opacity=".95" stroke="#2A3540"/>
+  <rect x="38" y="92" width="244" height="38" rx="12" fill="#111A23"/><rect x="38" y="118" width="244" height="12" fill="#111A23"/>
+  <text x="54" y="116" fill="#DDE4E9" font-family="Inter,Arial" font-size="11" font-weight="650">Keybinds</text><circle cx="263" cy="111" r="3" fill="#7965F2"/>
+  <circle cx="56" cy="151" r="3" fill="#7965F2"/><text x="68" y="155" fill="#D1D8DE" font-family="Inter,Arial" font-size="10">Minimum damage</text><text x="264" y="155" fill="#9C90F3" font-family="Inter,Arial" font-size="8.5" font-weight="650" text-anchor="end">HOLD</text>
+  <circle cx="56" cy="181" r="3" fill="#7965F2"/><text x="68" y="185" fill="#D1D8DE" font-family="Inter,Arial" font-size="10">Force body aim</text><text x="264" y="185" fill="#9C90F3" font-family="Inter,Arial" font-size="8.5" font-weight="650" text-anchor="end">TOGGLE</text>
+  <circle cx="56" cy="211" r="3" fill="#4B5966"/><text x="68" y="215" fill="#748290" font-family="Inter,Arial" font-size="10">Double tap</text><text x="264" y="215" fill="#596775" font-family="Inter,Arial" font-size="8.5" text-anchor="end">TOGGLE</text>
+</g>
+
+<g id="Spectators" filter="url(#shadow)">
+  <rect x="38" y="260" width="244" height="102" rx="12" fill="#0B1219" fill-opacity=".95" stroke="#2A3540"/>
+  <rect x="38" y="260" width="244" height="38" rx="12" fill="#111A23"/><rect x="38" y="286" width="244" height="12" fill="#111A23"/>
+  <text x="54" y="284" fill="#DDE4E9" font-family="Inter,Arial" font-size="11" font-weight="650">Spectators</text><text x="264" y="284" fill="#6F7E8B" font-family="Inter,Arial" font-size="9" text-anchor="end">2</text>
+  <circle cx="58" cy="320" r="9" fill="#202C37"/><circle cx="58" cy="317" r="3" fill="#71808D"/><path d="M53 325C54 321 62 321 63 325" stroke="#71808D"/><text x="76" y="324" fill="#B8C2CB" font-family="Inter,Arial" font-size="9.5">observer_one</text>
+  <circle cx="58" cy="344" r="9" fill="#202C37"/><circle cx="58" cy="341" r="3" fill="#71808D"/><path d="M53 349C54 345 62 345 63 349" stroke="#71808D"/><text x="76" y="348" fill="#7E8C99" font-family="Inter,Arial" font-size="9.5">player_07</text>
+</g>
+
+<g id="Target Indicator">
+  <circle cx="960" cy="540" r="42" stroke="#7863EE" stroke-width="1.5" stroke-opacity=".22"/><circle cx="960" cy="540" r="8" fill="#7863EE" opacity=".16"/><path d="M940 540H952M968 540H980M960 520V532M960 548V560" stroke="#B7AEFF" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M960 484A56 56 0 0 1 1016 540" stroke="#7863EE" stroke-width="2" stroke-linecap="round"/>
+</g>
+
+<g id="Hit Information" filter="url(#shadow)">
+  <rect x="1515" y="405" width="350" height="120" rx="12" fill="#0B1219" fill-opacity=".95" stroke="#2A3540"/>
+  <rect x="1531" y="421" width="42" height="42" rx="10" fill="#7965F2" fill-opacity=".16"/><circle cx="1552" cy="442" r="8" stroke="#AA9FFF" stroke-width="1.5"/><path d="M1547 442H1557M1552 437V447" stroke="#AA9FFF" stroke-width="1.3"/>
+  <text x="1586" y="438" fill="#E2E8EC" font-family="Inter,Arial" font-size="11" font-weight="650">Target locked</text><text x="1586" y="457" fill="#6F7E8B" font-family="Inter,Arial" font-size="9.5">enemy · 18.4 m</text>
+  <path d="M1531 480H1849" stroke="#26323D"/>
+  <text x="1531" y="505" fill="#7B8996" font-family="Inter,Arial" font-size="9">DAMAGE</text><text x="1590" y="505" fill="#A99EFF" font-family="Inter,Arial" font-size="11" font-weight="650">86</text><text x="1660" y="505" fill="#7B8996" font-family="Inter,Arial" font-size="9">CHANCE</text><text x="1723" y="505" fill="#D4DAE0" font-family="Inter,Arial" font-size="11" font-weight="650">74%</text><text x="1790" y="505" fill="#7B8996" font-family="Inter,Arial" font-size="9">HEAD</text><circle cx="1841" cy="501" r="4" fill="#67DFA0"/>
+</g>
+
+<g id="Notifications" filter="url(#shadow)">
+  <rect x="1539" y="32" width="326" height="64" rx="12" fill="#0B1219" fill-opacity=".96" stroke="#2A3540"/>
+  <rect x="1539" y="32" width="3" height="64" rx="1.5" fill="#7965F2"/>
+  <circle cx="1565" cy="64" r="11" fill="#7965F2" fill-opacity=".16"/><path d="M1560 64L1564 68L1571 59" stroke="#A99EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1586" y="58" fill="#DDE4E9" font-family="Inter,Arial" font-size="10.5" font-weight="650">Configuration loaded</text><text x="1586" y="76" fill="#687784" font-family="Inter,Arial" font-size="9">Default rage · cloud synced</text><text x="1847" y="58" fill="#5C6A77" font-family="Inter,Arial" font-size="8.5" text-anchor="end">NOW</text>
+  <rect x="1586" y="91" width="252" height="2" rx="1" fill="#26323D"/><rect x="1586" y="91" width="184" height="2" rx="1" fill="#7965F2"/>
+</g>
+
+<g id="Bottom Status" filter="url(#shadow)">
+  <rect x="776" y="990" width="368" height="52" rx="13" fill="#0B1219" fill-opacity=".95" stroke="#2A3540"/>
+  <circle cx="804" cy="1016" r="8" fill="#7965F2" fill-opacity=".16"/><circle cx="804" cy="1016" r="3" fill="#A99EFF"/>
+  <text x="820" y="1013" fill="#7A8996" font-family="Inter,Arial" font-size="8.5">PRESET</text><text x="820" y="1027" fill="#D0D7DD" font-family="Inter,Arial" font-size="10">Global</text>
+  <rect x="886" y="1003" width="1" height="26" fill="#2B3641"/><text x="904" y="1013" fill="#7A8996" font-family="Inter,Arial" font-size="8.5">DAMAGE</text><text x="904" y="1027" fill="#A99EFF" font-family="Inter,Arial" font-size="10" font-weight="650">42</text>
+  <rect x="974" y="1003" width="1" height="26" fill="#2B3641"/><text x="992" y="1013" fill="#7A8996" font-family="Inter,Arial" font-size="8.5">HITCHANCE</text><text x="992" y="1027" fill="#D0D7DD" font-family="Inter,Arial" font-size="10">68%</text>
+  <rect x="1082" y="1003" width="1" height="26" fill="#2B3641"/><circle cx="1102" cy="1016" r="4" fill="#67DFA0"/><text x="1112" y="1020" fill="#8B99A5" font-family="Inter,Arial" font-size="9">Ready</text>
+</g>
+</svg>

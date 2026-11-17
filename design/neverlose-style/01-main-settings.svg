@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+  <title>Neverlose Reloaded inspired main settings</title>
+  <defs>
+    <linearGradient id="bg" x1="240" y1="80" x2="1670" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091015"/><stop offset=".48" stop-color="#111922"/><stop offset="1" stop-color="#060B10"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="390" y1="190" x2="1530" y2="890" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121A23"/><stop offset="1" stop-color="#0B1118"/>
+    </linearGradient>
+    <linearGradient id="active" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#836CFF"/><stop offset="1" stop-color="#5944D8"/>
+    </linearGradient>
+    <radialGradient id="ambient" cx="0" cy="0" r="1" gradientTransform="translate(960 496) rotate(90) scale(620 920)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#253548" stop-opacity=".42"/><stop offset="1" stop-color="#060B10" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="290" y="140" width="1340" height="860" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#000" flood-opacity=".58"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <g id="Background">
+    <rect width="1920" height="1080" fill="url(#bg)"/>
+    <rect width="1920" height="1080" fill="url(#ambient)"/>
+    <g opacity=".11" stroke="#9CB2C7" stroke-width="1">
+      <path d="M0 182H1920M0 902H1920M210 0V1080M1710 0V1080"/>
+    </g>
+    <circle cx="1475" cy="160" r="240" fill="#6552FF" opacity=".035"/>
+    <circle cx="390" cy="910" r="310" fill="#326E9F" opacity=".04"/>
+  </g>
+
+  <g id="App Shell" filter="url(#shadow)">
+    <rect x="330" y="180" width="1260" height="720" rx="16" fill="url(#panel)"/>
+    <rect x="330.5" y="180.5" width="1259" height="719" rx="15.5" stroke="#2D3743" stroke-opacity=".76"/>
+    <rect x="331" y="181" width="1258" height="58" rx="15" fill="#111923"/>
+    <rect x="331" y="224" width="1258" height="15" fill="#111923"/>
+    <path d="M330 239H1590" stroke="#26313D"/>
+
+    <g id="Brand">
+      <rect x="352" y="198" width="28" height="28" rx="8" fill="url(#active)"/>
+      <path d="M359 218V207L366 213.4L373 207V218" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="392" y="217" fill="#F4F7FA" font-family="Inter,Arial" font-size="14" font-weight="650">Neverlose</text>
+      <rect x="471" y="204" width="1" height="16" fill="#33404D"/>
+      <text x="487" y="216" fill="#778695" font-family="Inter,Arial" font-size="11" font-weight="500">RELOADED</text>
+    </g>
+
+    <g id="Top Actions">
+      <rect x="1438" y="197" width="30" height="30" rx="8" fill="#17212B" stroke="#2B3743"/>
+      <path d="M1453 204V220M1448 209L1453 204L1458 209" stroke="#9AA8B6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1476" y="197" width="30" height="30" rx="8" fill="#17212B" stroke="#2B3743"/>
+      <circle cx="1491" cy="212" r="4" stroke="#9AA8B6" stroke-width="1.4"/><path d="M1491 204V206M1491 218V220M1499 212H1497M1485 212H1483" stroke="#9AA8B6" stroke-width="1.4" stroke-linecap="round"/>
+      <rect x="1514" y="197" width="54" height="30" rx="8" fill="#17212B" stroke="#2B3743"/>
+      <circle cx="1530" cy="212" r="5" fill="#5FDF94"/><text x="1541" y="216" fill="#B8C3CD" font-family="Inter,Arial" font-size="11">24 ms</text>
+    </g>
+
+    <g id="Sidebar">
+      <rect x="331" y="239" width="188" height="660" fill="#0D151D"/>
+      <path d="M519 239V899" stroke="#26313D"/>
+      <text x="352" y="276" fill="#637382" font-family="Inter,Arial" font-size="10" font-weight="700" letter-spacing="1.25">COMBAT</text>
+      <rect x="344" y="289" width="162" height="40" rx="9" fill="#1B2531"/>
+      <rect x="344" y="289" width="3" height="40" rx="1.5" fill="#7965F2"/>
+      <circle cx="366" cy="309" r="8" fill="#7965F2" fill-opacity=".18"/><path d="M362 309H370M366 305V313" stroke="#A99EFF" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="384" y="313" fill="#EFF3F7" font-family="Inter,Arial" font-size="12" font-weight="600">Rage</text>
+      <circle cx="491" cy="309" r="3" fill="#7965F2"/>
+
+      <rect x="344" y="335" width="162" height="40" rx="9" fill="transparent"/>
+      <circle cx="366" cy="355" r="8" fill="#23303B"/><path d="M362 357L366 351L370 357" stroke="#7D8C9A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="384" y="359" fill="#82909D" font-family="Inter,Arial" font-size="12" font-weight="550">Legit</text>
+
+      <text x="352" y="412" fill="#637382" font-family="Inter,Arial" font-size="10" font-weight="700" letter-spacing="1.25">CONFIGURATION</text>
+      <g font-family="Inter,Arial" font-size="12" font-weight="550" fill="#82909D">
+        <circle cx="366" cy="442" r="8" fill="#23303B"/><text x="384" y="446">Presets</text>
+        <circle cx="366" cy="488" r="8" fill="#23303B"/><text x="384" y="492">Visuals</text>
+        <circle cx="366" cy="534" r="8" fill="#23303B"/><text x="384" y="538">Miscellaneous</text>
+      </g>
+      <g opacity=".84"><rect x="348" y="832" width="154" height="48" rx="10" fill="#111C26" stroke="#263440"/><circle cx="369" cy="856" r="10" fill="#263443"/><circle cx="369" cy="856" r="4" fill="#6CE6A1"/><text x="386" y="853" fill="#D6DDE3" font-family="Inter,Arial" font-size="11" font-weight="600">Connected</text><text x="386" y="869" fill="#647584" font-family="Inter,Arial" font-size="9">Counter-Strike 2</text></g>
+    </g>
+
+    <g id="Content Header">
+      <text x="548" y="277" fill="#F0F4F7" font-family="Inter,Arial" font-size="17" font-weight="650">Rage</text>
+      <text x="548" y="297" fill="#6D7B88" font-family="Inter,Arial" font-size="10.5">Configure targeting and weapon behavior</text>
+      <rect x="1344" y="258" width="214" height="46" rx="10" fill="#111A23" stroke="#2B3743"/>
+      <text x="1358" y="274" fill="#667585" font-family="Inter,Arial" font-size="9" font-weight="650" letter-spacing=".5">WEAPON PRESET</text>
+      <text x="1358" y="292" fill="#E3E8ED" font-family="Inter,Arial" font-size="12" font-weight="600">Global</text>
+      <path d="M1538 279L1543 284L1548 279" stroke="#758493" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g id="Column 1">
+      <rect x="548" y="328" width="300" height="508" rx="12" fill="#101820" stroke="#27323D"/>
+      <text x="568" y="360" fill="#E7ECF0" font-family="Inter,Arial" font-size="12" font-weight="650">General</text>
+      <text x="568" y="379" fill="#667584" font-family="Inter,Arial" font-size="9.5">Core behavior</text>
+      <path d="M568 397H828" stroke="#222E39"/>
+
+      <g font-family="Inter,Arial">
+        <text x="568" y="431" fill="#BEC8D1" font-size="11">Enabled</text>
+        <rect x="795" y="414" width="33" height="18" rx="9" fill="#7863EE"/><circle cx="819" cy="423" r="6" fill="white"/>
+        <text x="568" y="473" fill="#BEC8D1" font-size="11">Silent aim</text>
+        <rect x="795" y="456" width="33" height="18" rx="9" fill="#7863EE"/><circle cx="819" cy="465" r="6" fill="white"/>
+        <text x="568" y="515" fill="#BEC8D1" font-size="11">Automatic fire</text>
+        <rect x="795" y="498" width="33" height="18" rx="9" fill="#293541"/><circle cx="804" cy="507" r="6" fill="#8B98A4"/>
+        <text x="568" y="557" fill="#BEC8D1" font-size="11">Automatic penetration</text>
+        <rect x="795" y="540" width="33" height="18" rx="9" fill="#7863EE"/><circle cx="819" cy="549" r="6" fill="white"/>
+        <path d="M568 580H828" stroke="#222E39"/>
+        <text x="568" y="614" fill="#BEC8D1" font-size="11">Field of view</text><text x="805" y="614" fill="#9D91F8" font-size="10" text-anchor="end">22°</text>
+        <rect x="568" y="628" width="260" height="4" rx="2" fill="#26323E"/><rect x="568" y="628" width="128" height="4" rx="2" fill="#7863EE"/><circle cx="696" cy="630" r="6" fill="#A99CFF"/>
+        <text x="568" y="676" fill="#BEC8D1" font-size="11">Maximum distance</text><text x="828" y="676" fill="#778695" font-size="10" text-anchor="end">Unlimited</text>
+        <rect x="568" y="690" width="260" height="4" rx="2" fill="#26323E"/><rect x="568" y="690" width="218" height="4" rx="2" fill="#7863EE"/><circle cx="786" cy="692" r="6" fill="#A99CFF"/>
+      </g>
+      <rect x="568" y="744" width="260" height="52" rx="9" fill="#131E28" stroke="#283541"/>
+      <text x="582" y="764" fill="#738291" font-family="Inter,Arial" font-size="9.5">QUICK STATUS</text>
+      <circle cx="584" cy="780" r="3" fill="#67DFA0"/><text x="594" y="784" fill="#C5CED6" font-family="Inter,Arial" font-size="10.5">Active for Global preset</text>
+    </g>
+
+    <g id="Column 2">
+      <rect x="864" y="328" width="330" height="508" rx="12" fill="#101820" stroke="#27323D"/>
+      <text x="884" y="360" fill="#E7ECF0" font-family="Inter,Arial" font-size="12" font-weight="650">Accuracy</text>
+      <text x="884" y="379" fill="#667584" font-family="Inter,Arial" font-size="9.5">Precision and damage</text>
+      <path d="M884 397H1174" stroke="#222E39"/>
+      <g font-family="Inter,Arial">
+        <text x="884" y="431" fill="#BEC8D1" font-size="11">Hit chance</text><text x="1174" y="431" fill="#9D91F8" font-size="10" text-anchor="end">68%</text>
+        <rect x="884" y="445" width="290" height="4" rx="2" fill="#26323E"/><rect x="884" y="445" width="197" height="4" rx="2" fill="#7863EE"/><circle cx="1081" cy="447" r="6" fill="#A99CFF"/>
+        <text x="884" y="493" fill="#BEC8D1" font-size="11">Minimum damage</text><text x="1174" y="493" fill="#9D91F8" font-size="10" text-anchor="end">42</text>
+        <rect x="884" y="507" width="290" height="4" rx="2" fill="#26323E"/><rect x="884" y="507" width="122" height="4" rx="2" fill="#7863EE"/><circle cx="1006" cy="509" r="6" fill="#A99CFF"/>
+        <text x="884" y="557" fill="#BEC8D1" font-size="11">Target selection</text>
+        <rect x="884" y="570" width="290" height="36" rx="8" fill="#151F29" stroke="#2B3742"/><text x="898" y="593" fill="#D4DBE1" font-size="10.5">Best damage</text><path d="M1148 584L1153 589L1158 584" stroke="#71808E" stroke-width="1.4" stroke-linecap="round"/>
+        <text x="884" y="642" fill="#BEC8D1" font-size="11">Hitboxes</text>
+        <g font-size="10.5"><rect x="884" y="655" width="70" height="27" rx="7" fill="#7965F2" fill-opacity=".18" stroke="#7965F2"/><text x="919" y="672.5" fill="#B8AEFF" text-anchor="middle">Head</text><rect x="962" y="655" width="70" height="27" rx="7" fill="#151F29" stroke="#2A3540"/><text x="997" y="672.5" fill="#7D8B98" text-anchor="middle">Chest</text><rect x="1040" y="655" width="62" height="27" rx="7" fill="#151F29" stroke="#2A3540"/><text x="1071" y="672.5" fill="#7D8B98" text-anchor="middle">Arms</text><rect x="1110" y="655" width="64" height="27" rx="7" fill="#151F29" stroke="#2A3540"/><text x="1142" y="672.5" fill="#7D8B98" text-anchor="middle">Legs</text></g>
+        <path d="M884 712H1174" stroke="#222E39"/>
+        <text x="884" y="747" fill="#BEC8D1" font-size="11">Dynamic points</text><rect x="1141" y="730" width="33" height="18" rx="9" fill="#7863EE"/><circle cx="1165" cy="739" r="6" fill="white"/>
+        <text x="884" y="789" fill="#BEC8D1" font-size="11">Safe points</text><rect x="1141" y="772" width="33" height="18" rx="9" fill="#293541"/><circle cx="1150" cy="781" r="6" fill="#8B98A4"/>
+      </g>
+    </g>
+
+    <g id="Column 3">
+      <rect x="1210" y="328" width="348" height="508" rx="12" fill="#101820" stroke="#27323D"/>
+      <text x="1230" y="360" fill="#E7ECF0" font-family="Inter,Arial" font-size="12" font-weight="650">Weapon presets</text>
+      <text x="1230" y="379" fill="#667584" font-family="Inter,Arial" font-size="9.5">Overrides for each weapon group</text>
+      <path d="M1230 397H1538" stroke="#222E39"/>
+      <g font-family="Inter,Arial" font-size="10.5">
+        <rect x="1230" y="414" width="308" height="42" rx="8" fill="#1A2430" stroke="#7863EE" stroke-opacity=".55"/><circle cx="1251" cy="435" r="8" fill="#7863EE" fill-opacity=".18"/><path d="M1247 435H1255" stroke="#A99EFF" stroke-width="1.4"/><text x="1268" y="439" fill="#ECEFF3" font-weight="600">Global</text><text x="1518" y="439" fill="#8E80F0" text-anchor="end">Active</text>
+        <rect x="1230" y="464" width="308" height="42" rx="8" fill="#141E28"/><circle cx="1251" cy="485" r="8" fill="#24313D"/><text x="1268" y="489" fill="#AEB9C3">Auto snipers</text><circle cx="1518" cy="485" r="3" fill="#44515E"/>
+        <rect x="1230" y="514" width="308" height="42" rx="8" fill="#141E28"/><circle cx="1251" cy="535" r="8" fill="#24313D"/><text x="1268" y="539" fill="#AEB9C3">Scout</text><circle cx="1518" cy="535" r="3" fill="#44515E"/>
+        <rect x="1230" y="564" width="308" height="42" rx="8" fill="#141E28"/><circle cx="1251" cy="585" r="8" fill="#24313D"/><text x="1268" y="589" fill="#AEB9C3">AWP</text><circle cx="1518" cy="585" r="3" fill="#44515E"/>
+        <rect x="1230" y="614" width="308" height="42" rx="8" fill="#141E28"/><circle cx="1251" cy="635" r="8" fill="#24313D"/><text x="1268" y="639" fill="#AEB9C3">Heavy pistols</text><circle cx="1518" cy="635" r="3" fill="#44515E"/>
+        <rect x="1230" y="664" width="308" height="42" rx="8" fill="#141E28"/><circle cx="1251" cy="685" r="8" fill="#24313D"/><text x="1268" y="689" fill="#AEB9C3">Pistols</text><circle cx="1518" cy="685" r="3" fill="#44515E"/>
+        <rect x="1230" y="714" width="308" height="42" rx="8" fill="#141E28"/><circle cx="1251" cy="735" r="8" fill="#24313D"/><text x="1268" y="739" fill="#AEB9C3">Rifles</text><circle cx="1518" cy="735" r="3" fill="#44515E"/>
+        <rect x="1230" y="772" width="308" height="44" rx="9" fill="#7965F2" fill-opacity=".12" stroke="#7965F2" stroke-opacity=".4"/><path d="M1250 794H1262M1256 788V800" stroke="#A99EFF" stroke-width="1.5" stroke-linecap="round"/><text x="1274" y="798" fill="#BDB5FF" font-weight="600">Create preset</text>
+      </g>
+    </g>
+
+    <g id="Footer">
+      <text x="548" y="872" fill="#566574" font-family="Inter,Arial" font-size="9">Build 2.1.04</text>
+      <circle cx="1470" cy="868" r="3" fill="#67DFA0"/><text x="1480" y="872" fill="#657483" font-family="Inter,Arial" font-size="9">Cloud synced</text>
+    </g>
+  </g>
+
+  <g id="Keybind HUD">
+    <rect x="1598" y="770" width="214" height="112" rx="12" fill="#0C131A" fill-opacity=".94" stroke="#2A3540"/>
+    <rect x="1598" y="770" width="214" height="34" rx="12" fill="#111A23"/><rect x="1598" y="793" width="214" height="11" fill="#111A23"/>
+    <text x="1614" y="792" fill="#DCE3E8" font-family="Inter,Arial" font-size="10.5" font-weight="650">Keybinds</text><circle cx="1795" cy="787" r="3" fill="#7863EE"/>
+    <circle cx="1616" cy="824" r="3" fill="#7863EE"/><text x="1627" y="828" fill="#C0C9D1" font-family="Inter,Arial" font-size="9.5">Minimum damage</text><text x="1796" y="828" fill="#7165CE" font-family="Inter,Arial" font-size="9" text-anchor="end">HOLD</text>
+    <circle cx="1616" cy="852" r="3" fill="#53616F"/><text x="1627" y="856" fill="#748290" font-family="Inter,Arial" font-size="9.5">Double tap</text><text x="1796" y="856" fill="#596775" font-family="Inter,Arial" font-size="9" text-anchor="end">TOGGLE</text>
+  </g>
+</svg>
